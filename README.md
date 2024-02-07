@@ -24,3 +24,21 @@ Mutable List를 사용해서 간단하게 만든 Queue
     queue.enqueue("4")
     queue.dequeue()
 ```
+
+## Binary search tree
+
+```
+    val bst = BinarySearchTree<Int>()
+
+    bst.insert(5)
+    bst.insert(2)
+    bst.insert(8)
+    bst.insert(6)
+    bst.insert(3)
+
+    println("BST contains 6: ${bst.contains(6)}")
+    println("BST contains 1: ${bst.contains(1)}")
+
+    println("Inorder Traversal of BST:")
+    bst.inorderTraversal()
+```
