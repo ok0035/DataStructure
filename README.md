@@ -5,7 +5,6 @@
 Mutable List를 사용해서 간단하게 만든 Stack
 
 ```
-    println("===Stack===")
     val stack = Stack<String>()
     stack.add("1")
     stack.add("2")
@@ -18,7 +17,6 @@ Mutable List를 사용해서 간단하게 만든 Stack
 Mutable List를 사용해서 간단하게 만든 Queue
 
 ```
-    println("===Queue===")
     val queue = Queue<String>()
     queue.enqueue("1")
     queue.enqueue("2")
