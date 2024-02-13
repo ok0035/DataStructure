@@ -7,7 +7,7 @@ class BinarySearchTree<T : Comparable<T>> {
         root = insertRec(root, value)
     }
 
-    private fun insertRec(current: TreeNode<T>?, value: T): TreeNode<T>? {
+    private fun insertRec(current: TreeNode<T>?, value: T): TreeNode<T> {
         if (current == null) {
             return TreeNode(value)
         }
