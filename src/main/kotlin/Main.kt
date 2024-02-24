@@ -1,7 +1,9 @@
 package org.example
 
 import org.example.bst.BinarySearchTree
+import org.example.queue.Queue
 import org.example.sort.Sort
+import org.example.stack.Stack
 import kotlin.random.Random
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -81,8 +83,6 @@ fun main() {
     println("start time -> $mergeStartTime")
     val result = sort.mergeSort(unsortedList)
     println(result)
-//    sort.mergeSort(unsortedList, isAscendingSort = true)
-//    sort.mergeSort(unsortedList, isAscendingSort = false)
     val mergeEndTime = System.currentTimeMillis()
     println("end time -> $insertEndTime")
     println("total time -> ${mergeEndTime - mergeStartTime} mils")
@@ -93,8 +93,6 @@ fun main() {
     val quickSortedList = unsortedList.toMutableList()
     println("start time -> $quickStartTime")
     sort.quickSort(quickSortedList, 0, unsortedList.lastIndex, false)
-//    sort.mergeSort(unsortedList, isAscendingSort = true)
-//    sort.mergeSort(unsortedList, isAscendingSort = false)
     val quickEndTime = System.currentTimeMillis()
     println(quickSortedList)
     println("end time -> $quickEndTime")
